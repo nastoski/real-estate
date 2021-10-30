@@ -1,0 +1,288 @@
+.hero-section {
+  background-image: url("../images/header-img.jpg");
+  padding-top: 115px;
+  padding-bottom: 115px;
+  background-size: cover;
+}
+
+.hero-section h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 65px;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-section a {
+  background-color: #4f33f1;
+  padding: 10px;
+  color: white;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.services-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgb(245, 245, 245);
+}
+.services-section h3 {
+  text-align: center;
+  color: #4c007b;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.services-section p {
+  text-align: center;
+  color: #6d6d6d;
+  padding-bottom: 60px;
+}
+.service-item {
+  background-color: #ebebeb;
+  -webkit-box-shadow: -3px 5px 17px 0 rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: -3px 5px 17px 0 rgba(0, 0, 0, 0.64);
+  box-shadow: -3px 5px 17px 0 rgba(0, 0, 0, 0.64);
+  text-align: center;
+  color: #fff;
+  padding-bottom: 60px;
+  transition: 0.4s;
+  margin-top: 5px;
+}
+.service-item:hover {
+  background-color: #d6d6d6;
+  cursor: pointer;
+}
+
+.service-item h4 {
+  text-transform: uppercase;
+  color: gray;
+}
+
+.service-item i {
+  padding: 40px;
+  color: gray
+}
+
+.recent-listing {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.recent-listing h3 {
+  text-align: center;
+  color: #4c007b;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.recent-listing p {
+  text-align: center;
+  color: #6d6d6d;
+}
+
+/* Slider */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.product-category {
+  color: #4c007b;
+  text-align: center;
+  padding: 10px 10vw;
+  font-size: 30px;
+  font-weight: 500px;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+.product-short-text {
+  font-size: 18px;
+  text-align: center;
+  color: #6d6d6d;
+  margin-bottom: 60px;
+}
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 450px;
+  margin-right: 40px;
+}
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+.product-thumb {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+.card-span {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+.product-name {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.product-country {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  margin: 5px 0;
+}
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.prev-btn,
+.next-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffff;
+  cursor: pointer;
+  z-index: 8;
+}
+.prev-btn {
+  left: 0;
+}
+.next-btn {
+  right: 0;
+}
+.prev-btn i,
+.next-btn i {
+  opacity: 0.2;
+}
+.prev-btn:hover i,
+.next-btn:hover i {
+  opacity: 1;
+}
+
+/* Featured props  */
+
+.featured-properties {
+  background-color: rgb(245, 245, 245);
+  padding: 120px;
+}
+
+.fp-info {
+  text-align: center;
+  color: #4c007b;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+.fp-short-text {
+  font-size: 18px;
+  text-align: center;
+  color: #6d6d6d;
+  margin-bottom: 60px;
+}
+
+.prop-img {
+  float: left;
+  height: 140px;
+  width: 260px;
+}
+
+.prop-info {
+  float: left;
+  height: 370px;
+  width: 280px;
+  background-color: #ffffff;
+}
+
+.prop-text {
+  height: 300px;
+  width: 270px;
+  overflow-wrap: break-word;
+}
+
+.prop-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 30px;
+  font-family: "Bentham", serif;
+  font-size: 24px;
+  color: #474747;
+}
+
+.prop-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.prop-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  font-family: "Playfair Display", serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+.span-price {
+  display: inline-block;
+  font-family: "Suranna", serif;
+  font-size: 24px;
+  margin-left: 37px;
+  color: #474747;
+}
+
+.prop-item {
+  padding-bottom: 120px;
+  transition: 0.4s;
+  margin-top: 5px;
+}
+.prop-icon-details {
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 37px;
+  color: #474747;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+}

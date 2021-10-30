@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  /* width: 100%; */
+  background: #f8f8f8;
+}
+.nav {
+  padding: 10px 10vw;
+  display: flex;
+  justify-content: space-between;
+}
+.brand-logo {
+  height: 40px;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+.search {
+  width: 500px;
+  display: flex;
+}
+.search-box {
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #d1d1d1;
+  text-transform: capitalize;
+  outline: none;
+}
+.search-btn {
+  width: 20%;
+  height: 40px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #383838;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 15px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.search-box::placeholder {
+  color: rgb(136, 136, 136);
+}
+.nav-items a {
+  margin-left: 20px;
+  position: relative;
+}
+.links-container {
+  display: flex;
+  padding: 5px 10vw;
+  justify-content: center;
+  margin-bottom: 0 !important;
+  list-style: none;
+}
+.link {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #888888;
+  transition: 0.5s;
+}
+.link:hover {
+  opacity: 1;
+}

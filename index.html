@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nastoski | Home Page</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar"></nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Buy, Sell or Rent</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusantium ad at deleniti.
+            </p>
+            <a class="btn" href="#">Discover more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our services -->
+
+    <section class="services-section">
+      <h3>Our Services for You</h3>
+      <p>
+        Highlight the best of your properties by using the List Category
+        shortcode. <br />
+        You can list categories, types, cities, areas and states of your choice.
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="service-item">
+              <i class="fas fa-chart-line fa-4x"></i>
+              <h4>Sell your home with us</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-item">
+              <i class="fas fa-clipboard fa-4x"></i>
+              <h4>Evaluate your home</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-item">
+              <i class="fas fa-certificate fa-4x"></i>
+              <h4>Free certified appraisal</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="service-item">
+              <i class="fas fa-home fa-4x"></i>
+              <h4>Buy a home with us easier</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Listings -->
+    <section class="product">
+      <h2 class="product-category">RECENT LISTINGS</h2>
+      <h3 class="product-short-text">
+        Our distinctive buildings fill the skyline and streetscapes of the city.
+        <br />
+        Conceived with innovative design and exceptional amenities.
+      </h3>
+      <button class="prev-btn"><i class="fas fa-arrow-left fa-2x"></i></button>
+      <button class="next-btn"><i class="fas fa-arrow-right fa-2x"></i></button>
+      <div class="product-container">
+        <!-- product card -->
+
+        <!-- product card end -->
+      </div>
+    </section>
+
+    <!-- featured properties -->
+    <section class="featured-properties">
+      <h3 class="fp-info">Featured Properties</h3>
+      <p class="fp-short-text">
+        Here are four listings that are displayed using the featured property
+        shorcode. <br />
+        Use this shortcode when you have some special listings to showcase.
+      </p>
+      <div class="container">
+        <div id="prop-card" class="row">
+          <!-- featured prop item -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Google map section -->
+    <div id="map"></div>
+
+    <!-- footer -->
+    <footer></footer>
+
+    <script>
+      function initMap() {
+        let leskoec = { center: { lat: 41.147694, lng: 20.826769 }, zoom: 7 };
+        let map = new google.maps.Map(document.getElementById("map"), leskoec);
+        let marker = new google.maps.Marker({
+          position: { lat: 41.147694, lng: 20.826769 },
+          map: map,
+        });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnWOzNoxAmfZg7onCWma5PfBWac-J_JHE&callback=initMap"
+    ></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/fetchData.js"></script>
+    <script src="js/home.js" type="module"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/searchList.js" type="module"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/property.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/list.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar"></nav>
+
+    <section id="images-section" class="prop-details container"></section>
+
+    <section class="container pb-xl-5">
+      <div class="row">
+        <div class="col-lg-8 col-xs-12">
+          <div id="prop-description" class="card">
+            <div class="card-header">
+              <h4>Description</h4>
+            </div>
+            <div class="card-body">
+              <p>
+                Developers buy land, finance real estate deals, build or have
+                builders build projects, create, imagine, control, and
+                orchestrate the process of development from the beginning to
+                end.[2] Developers usually take the greatest risk in the
+                creation or renovation of real estate—and receive the greatest
+                rewards. Typically, developers purchase a tract of land,
+                determine the marketing of the property, develop the building
+                program and design, obtain the necessary public approval and
+                financing, build the structures, and rent out, manage, and
+                ultimately sell it.[1] Sometimes property developers will only
+                undertake part of the process. For example, some developers
+                source a property and get the plans and permits approved before
+                selling the property with the plans and permits to a builder at
+                a premium price. Alternatively, a developer that is also a
+                builder may purchase a property with the plans and permits in
+                place so that they do not have the risk of failing to obtain
+                planning approval and can start construction on the development
+                immediately.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="forms-container" class="col-lg-4 col-xs-12">
+          <div class="form">
+            <form action="#">
+              <div class="form-group">
+                <label>Advanced Search</label>
+                <input
+                  class="form-control"
+                  id="search-bar"
+                  type="text"
+                  placeholder="Type keyword"
+                />
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="">Categories</option>
+                  <option value="">option 1</option>
+                  <option value="">option 2</option>
+                  <option value="">option 3</option>
+                  <option value="">option 4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="">Types</option>
+                  <option value="">option 1</option>
+                  <option value="">option 2</option>
+                  <option value="">option 3</option>
+                  <option value="">option 4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="">States</option>
+                  <option value="">option 1</option>
+                  <option value="">option 2</option>
+                  <option value="">option 3</option>
+                  <option value="">option 4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="">Cities</option>
+                  <option value="">option 1</option>
+                  <option value="">option 2</option>
+                  <option value="">option 3</option>
+                  <option value="">option 4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="">Areas</option>
+                  <option value="">option 1</option>
+                  <option value="">option 2</option>
+                  <option value="">option 3</option>
+                  <option value="">option 4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="">Property Status</option>
+                  <option value="">option 1</option>
+                  <option value="">option 2</option>
+                  <option value="">option 3</option>
+                  <option value="">option 4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="">Min Rooms</option>
+                  <option value="">option 1</option>
+                  <option value="">option 2</option>
+                  <option value="">option 3</option>
+                  <option value="">option 4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="">Min Bathrooms</option>
+                  <option value="">option 1</option>
+                  <option value="">option 2</option>
+                  <option value="">option 3</option>
+                  <option value="">option 4</option>
+                </select>
+              </div>
+              <button
+                type="submit"
+                class="section-btn btn btn-secondary btn-block"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google map section -->
+    <div id="map"></div>
+
+    <footer></footer>
+    <script>
+      function initMap() {
+        let leskoec = { center: { lat: 41.147694, lng: 20.826769 }, zoom: 7 };
+        let map = new google.maps.Map(document.getElementById("map"), leskoec);
+        let marker = new google.maps.Marker({
+          position: { lat: 41.147694, lng: 20.826769 },
+          map: map,
+        });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnWOzNoxAmfZg7onCWma5PfBWac-J_JHE&callback=initMap"
+    ></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/fetchData.js"></script>
+    <script src="js/property.js" type="module"></script>
+    <script src="js/footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+.section-background {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.properties-thumb {
+  background: #f9f9f9;
+  position: relative;
+  margin-bottom: 10px;
+  color: #000000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.properties-thumb-secondary {
+  margin-bottom: 30px;
+}
+.properties-top {
+  position: relative;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.properties-image {
+  background: linear-gradient(to right, #202020, #101010);
+}
+.properties-date {
+  background: linear-gradient(rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 20px 25px;
+}
+.properties-date span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 10px;
+}
+.properties-detail {
+  padding: 25px 25px 15px 25px;
+}
+
+.properties-detail h3 {
+  margin: 0 0 2px 0;
+  color: gray;
+}
+.properties-detail a {
+  color: rgb(37, 37, 37);
+  font-weight: 400;
+}
+.lead {
+  font-family: "Muli";
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: rgb(133, 133, 133);
+}
+.lead strong {
+  color: rgb(133, 133, 133);
+}
+.form-control {
+  background: transparent;
+  box-shadow: none;
+  height: 45px;
+  margin: 10px 0;
+  background-color: #eee;
+  border-radius: 10px;
+}
+#forms-container {
+  padding: 20px;
+  border: 1px solid rgb(216, 216, 216);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
